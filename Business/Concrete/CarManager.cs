@@ -1,5 +1,8 @@
 ﻿using Business.Abstract;
 using Entities.Concrete;
+using DataAccess.Abstract;
+using DataAccess.Concrete.EntityFramework;
+using DataAccess.Concrete.InMemory;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +16,7 @@ namespace Business.Concrete
         ICarService _carService;
         public CarManager(ICarService carService)
         {
-                _carService = carService;
+            _carService = carService;
         }
         public List<Car> GetAll()
         {

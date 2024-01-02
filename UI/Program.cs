@@ -1,4 +1,5 @@
 ﻿using Business.Concrete;
+using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
 using Entities.Concrete;
 using System.ComponentModel;
@@ -8,10 +9,10 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        CarManager carManager = new CarManager(new InMemoryDal());
-        foreach (var car in carManager.GetDailyPrice(50, 100))
+        EfCarDal carManager = new EfCarDal();
+        foreach (var car in carManager.GetAll())
         {
-            Console.WriteLine(car.BrandId);
+            Console.WriteLine(car.Description);
         }
 
     }
