@@ -4,7 +4,7 @@ Bu proje, Entity Framework, katmanlı mimari ve local veritabanı kullanılarak 
 
 ## Proje Tanımı
 
-Proje, Entity Framework kullanılarak veritabanı etkileşimi sağlanmış, katmanlı mimari kullanılarak kodun modüler ve sürdürülebilir olması hedeflenmiştir.
+Proje, Entity Framework kullanılarak veritabanı etkileşimi sağlanmış, katmanlı mimari kullanılarak kodun modüler ve sürdürülebilir olması hedeflenmiştir. Araç kiralama projesidir.
 
 ## Gereksinimler
 
@@ -28,11 +28,11 @@ Proje, Entity Framework kullanılarak veritabanı etkileşimi sağlanmış, katm
 
 Proje, şu katmanlı mimariye dayanmaktadır:
 
-- **[ReCap].Core**: Temel iş mantığı ve modeller.
-- **[ReCap].Data**: Veritabanı etkileşimi için Entity Framework.
-- **[ReCap].Service**: İş mantığı servisleri.
-- **[Recağ].Web**: Kullanıcı arayüzü ve sunum katmanı.
+- **[ReCap].Core: Temel iş mantığı ve modeller.
+- **[ReCap].DataAccess: Veritabanı etkileşimi için Entity Framework.
+- **[ReCap].Business: İş mantığı servisleri.
+- **[Recap].UI: Console da Kullanıcı arayüzü ve sunum katmanı.
 
 ## Veritabanı
 
-Projede [LocalDB/MSSQL/SQLite] kullanılmıştır.
+Projede [LocalDB/MSSQL/NorthWind] kullanılmıştır.
