@@ -15,7 +15,7 @@ Proje, Entity Framework kullanılarak veritabanı etkileşimi sağlanmış, katm
 
 1. Repoyu bilgisayarınıza klonlayın.
 2. Visual Studio'yu açın.
-3. Proje dosyasını açın: `ProjeAdi.sln`.
+3. Proje dosyasını açın: `ReCapProject.sln`.
 4. Projeyi derleyin ve çalıştırın.
 
 ## Kullanılan Teknolojiler
